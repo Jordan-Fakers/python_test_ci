@@ -1,0 +1,11 @@
+name: first action CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: ecrire hello world
+      run: echo "hello fellow comrades"
+
+
